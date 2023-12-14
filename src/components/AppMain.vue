@@ -20,7 +20,7 @@ main{
 
   div{
      
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 
     span{

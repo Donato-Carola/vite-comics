@@ -77,7 +77,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     
 }
