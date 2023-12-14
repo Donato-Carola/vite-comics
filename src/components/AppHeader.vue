@@ -1,12 +1,12 @@
 <template lang="">
     <header>
    <div class='logo'>
-    
+    <img src="../assets/img/dc-logo.png" alt="">
    </div>
    <nav>
     <ul>
         <li v-for="list in navList" >
-         {{list.name}}
+         <a href="#">{{list.name}}</a>
         </li>
     </ul>
    </nav>
@@ -71,7 +71,34 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+header{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+
+
 ul{
+  display: flex;
   list-style: none;
+  
+  li{
+     margin-right: 1rem;
+     text-transform: uppercase;
+    
+    a {
+      text-decoration: none;
+      color:rgb(65, 58, 61);
+      
+     }
+     
+     &:hover{
+        border-bottom: 2px solid rgb(2, 130, 249);
+        color: rgb(2, 130, 249);
+     }
+  }
 }
 </style>
