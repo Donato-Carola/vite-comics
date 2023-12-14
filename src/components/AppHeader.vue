@@ -72,10 +72,13 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header{
+    
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items:center;
+    width: 1000px;
+    margin: 0 auto;
     
 }
 
