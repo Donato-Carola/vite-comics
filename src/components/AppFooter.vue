@@ -47,6 +47,11 @@
             <li>characters</li>
          </ul>
       </div>
+       
+
+   <div class='logo'>
+    <img src="../assets/img/dc-logo-bg.png" alt="">
+   </div>
 
     </section>
   </footer>
@@ -78,12 +83,14 @@ export default {};
 @use "../styles/partials/variables" as *;
 
 footer {
+ 
   background-repeat: no-repeat;  
   background-image: url(../assets/img/footer-bg.jpg);
   background-size: cover;
 }
 
 section.firstSection {
+    position: relative;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -104,10 +111,18 @@ section.firstSection {
       padding-top: 0.5rem;
     }
   }
+
+  div.logo{
+  
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
 }
 
 div.underFooter{
-    
+    width: 100%;
+ position: fixed;
  background-color: rgb(48, 48, 48);
 
  
