@@ -91,10 +91,11 @@ ul{
   li{
      margin-right: 1rem;
      text-transform: uppercase;
-    
+     border-bottom: 2px solid transparent ;
     a {
       text-decoration: none;
       color:rgb(65, 58, 61);
+     
       
      }
      
