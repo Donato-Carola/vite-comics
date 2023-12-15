@@ -1,35 +1,27 @@
 <template>
-<main>
-<div>
-  <img src="../assets/img/jumbotron.jpg" alt="">
-</div>
+  <main>
+    <img src="../assets/img/jumbotron.jpg" alt="" />
 
-   <section>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    <ListHero/>
-    
-    
-
-   </section>
-   
- </main>
+    <section>
+      <div class="series">
+        <span>cureent series</span>
+      </div>
+      <div>
+        <ListHero
+          v-for="hero in heroList"
+          :imageSrc="hero.thumb"
+          :title="hero.series"
+        />
+      </div>
+      <div class="button">
+        <button>load more</button>
+      </div>
+    </section>
+  </main>
 </template>
 
-
-
 <script>
-
-import ListHero from './ListHero.vue';
+import ListHero from "./ListHero.vue";
 
 export default {
   name: "AppMain",
@@ -119,45 +111,68 @@ export default {
           type: "graphic novel",
         },
       ],
-    }
-
+    };
   },
-  components:{
-    ListHero
-  }
-
-}
+  components: {
+    ListHero,
+  },
+};
 </script>
-
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 
-main{
+main {
   background-color: rgb(28, 28, 28);
-   position: relative; 
-  div{ 
-    
-     
-    img{
-      width: 100%;
-      background-repeat: no-repeat;
-     
-    }}
+  position: relative;
+
+  img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+section {
+  padding: 2rem 0;
+  background-color: rgb(31, 31, 31);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+div.series {
+  position: absolute;
+  bottom: 95%;
+  left: 150px;
+  width: 12%;
+  background-color: rgb(2, 130, 249);
+  padding: 1rem 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+div.button{
+  justify-content: center;
+  
+  
+  
+  button {
+    padding: 0.5rem 2.5rem;
+    background-color: rgb(2, 130, 249);
+    border: 0;
+    color: white;
+
+  text-transform: uppercase; 
    
 }
-
-section{
-  background-color: rgb(31, 31, 31);
- position: absolute;
- top: 50%;
- width: 100%;
- display: flex;
- flex-wrap: wrap;
-
 }
-
-
-
 
 </style>

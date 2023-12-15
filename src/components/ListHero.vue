@@ -2,9 +2,10 @@
 
     
     <article>
-        <h1>
-            hero element
-        </h1>
+        <img :src="imageSrc" alt="">
+        <div>
+            {{ title }}
+        </div>
     </article>
             
 
@@ -14,6 +15,10 @@
 <script>
 export default {
     name:'ListHero',
+    props: {
+        imageSrc: String,
+        title: String,
+    }
 }
 </script>
 
@@ -23,9 +28,20 @@ export default {
 <style lang="scss" >
 
  article{
-    background-color:rgb(28, 28, 28);
-    width: calc(100% / 6);
-    height: 200px;
+    
+    width: calc(100% / 6 - 1rem);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    
+    img{
+        width: 100%;
+        height: 150px;
+       
+       
+    }
+   
  }
 
 

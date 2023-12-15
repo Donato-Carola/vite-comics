@@ -101,7 +101,7 @@ section.logoSection{
 
 
 section.firstSection {
-    position: relative;
+   
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -123,16 +123,11 @@ section.firstSection {
     }
   }
 
-  div.logo{
-  
-    position: absolute;
-    top: -20px;
-    right: 0;
-  }
+ 
 }
 
 div.underFooter{
-  position: absolute;
+ 
     width: 100%;
   z-index: 3;
  background-color: rgb(48, 48, 48);
