@@ -1,9 +1,28 @@
 <template>
+<main>
+<div>
+  <img src="../assets/img/jumbotron.jpg" alt="">
+</div>
 
-    <section>
-      <ListHero/>
-    </section>
- 
+   <section>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    <ListHero/>
+    
+    
+
+   </section>
+   
+ </main>
 </template>
 
 
@@ -100,7 +119,7 @@ export default {
           type: "graphic novel",
         },
       ],
-    };
+    }
 
   },
   components:{
@@ -113,6 +132,32 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+
+main{
+  background-color: rgb(28, 28, 28);
+   position: relative; 
+  div{ 
+    
+     
+    img{
+      width: 100%;
+      background-repeat: no-repeat;
+     
+    }}
+   
+}
+
+section{
+  background-color: rgb(31, 31, 31);
+ position: absolute;
+ top: 50%;
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+
+}
+
+
 
 
 </style>
