@@ -1,5 +1,10 @@
 <template lang="">
   <footer>
+
+    <section class='logoSection'>
+
+      
+   </section>
     <section class='firstSection'>
       <div>
         <h2>dc comics</h2>
@@ -89,6 +94,12 @@ footer {
   background-size: cover;
 }
 
+section.logoSection{
+  height: 200px;
+  background-color: rgb(2, 130, 249);
+}
+
+
 section.firstSection {
     position: relative;
   width: 1200px;
@@ -121,8 +132,9 @@ section.firstSection {
 }
 
 div.underFooter{
+  position: absolute;
     width: 100%;
- position: fixed;
+  z-index: 3;
  background-color: rgb(48, 48, 48);
 
  
