@@ -1,7 +1,7 @@
 <template >
   <main>
   <section >
-    
+    <HeroElement/>
 
   </section>
   </main>
@@ -10,7 +10,6 @@
 
 
 <script>
-
 
 
 
