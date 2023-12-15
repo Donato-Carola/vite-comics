@@ -1,20 +1,19 @@
-<template >
-  <main>
-  <section >
-    <HeroElement/>
+<template>
 
-  </section>
-  </main>
+    <section>
+      <ListHero/>
+    </section>
+ 
 </template>
 
 
 
 <script>
 
-
+import ListHero from './ListHero.vue';
 
 export default {
-  name: 'AppMain',
+  name: "AppMain",
   data() {
     return {
       heroList: [
@@ -102,18 +101,18 @@ export default {
         },
       ],
     };
+
   },
-};
+  components:{
+    ListHero
+  }
+
+}
 </script>
 
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
-
-main {
-  background-color: rgb(28, 28, 28);
- 
-}
 
 
 </style>
