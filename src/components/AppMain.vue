@@ -121,6 +121,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
 main {
   background-color: rgb(28, 28, 28);
